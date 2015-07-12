@@ -2,9 +2,20 @@
 var assert = require('assert');
 var isFileGlobal = require('./');
 
-it('Should return location of where.exe', function (done) {
-	isFileGlobal('where.exe', function(err, path) {
-		assert.strictEqual(path[0], 'C:/Windows/system32/where.exe');
-		done();
+// describe('When searching for where.exe', function() {
+// 	it('does return location', function(done) {
+// 		isFileGlobal('where.exe', function(err, path) {
+// 			assert(Boolean(path[0]));
+// 			done();
+// 		});
+// 	});
+// });
+
+describe('When searching for non-existing file', function() {
+	it('returns undefined', function(done) {
+		isFileGlobal('what.exe', function(err, path) {
+			assert(!Boolean(path[0]));
+			done();
+		});
 	});
 });
