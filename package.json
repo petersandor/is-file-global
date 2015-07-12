@@ -1,0 +1,33 @@
+{
+  "name": "is-file-global",
+  "version": "0.0.0",
+  "description": "Check if a file is available globally in PATH",
+  "license": "MIT",
+  "repository": "petersandor/is-file-global",
+  "author": {
+    "name": "Peter Sandor",
+    "email": "peter@petersandor.name",
+    "url": "petersandor.name"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "is",
+    "file",
+    "global",
+    "path"
+  ],
+  "dependencies": {
+    "globby": "^2.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
