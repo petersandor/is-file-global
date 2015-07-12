@@ -45,7 +45,7 @@ Type: `function`
 
 Arguments: `error`, `string`
 
-Resulting string contains location of the file if found, empty string otherwise.
+Resulting string contains location of the file if found, `undefined` otherwise.
 
 
 ## Support
