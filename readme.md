@@ -36,7 +36,7 @@ isFileGlobal('where.exe', function(err, path) {
 *Required*  
 Type: `string`
 
-Name of a script or executable to find e.g. `where.exe`
+Name of a script or executable to find e.g. `where.exe`. Also, you can use patterns to match files, see [Glob](https://github.com/isaacs/node-glob#glob).
 
 #### callback
 
