@@ -43,9 +43,9 @@ Name of a script or executable to find e.g. `where.exe`. Also, you can use patte
 *Required*  
 Type: `function`
 
-Arguments: `error`, `string`
+Arguments: `error`, `result`
 
-Resulting string contains location of the file if found, `undefined` otherwise.
+Where `result` is an array containing path(s) to the file or an empty array in case of no results.
 
 
 ## Support
